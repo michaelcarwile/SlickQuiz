@@ -51,10 +51,11 @@
                 },
                 events: {
                     onStartQuiz: function (options) {},
-                    onCompleteQuiz: function (options) {}  // reserved: options.questionCount, options.score
+                    onCompleteQuiz: function (options) {},  // reserved: options.questionCount, options.score
+                    onQuestionSubmission: function (options) {}  // reserved: options.questionRawData, options.selectedAnswers, options.wasCorrectAnswer
                 }
             },
-
+ 
             // Class Name Strings (Used for building quiz and for selectors)
             questionCountClass     = 'questionCount',
             questionGroupClass     = 'questions',
@@ -497,6 +498,13 @@
                 }
 
                 internal.method.turnKeyAndGo (key, options && options.callback ? options.callback : function () {});
+
+                if (plugin.config.events &&
+                        plugin.config.events.onQuestionSubmission) {
+                    plugin.config.events.onQuestionSubmission.apply (null, [{ questionRawData : questions[questionIndex],
+                            selectedAnswers: selectedAnswers,
+                            wasCorrectAnswer : correctResponse }]);
+                }
             },
 
             // Moves to the next question OR completes the quiz if on last question

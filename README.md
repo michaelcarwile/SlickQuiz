@@ -88,6 +88,21 @@ To initialize your quiz:
 
 **`events.onCompleteQuiz`** (function) *Default: empty;* - a function to be executed the quiz has completed; the function will be passed two arguments in an object: <code>options.questionCount</code>, <code>options.score</code>
 
+**`events.onQuestionSubmission`** (function) *Default: empty;* - a function to be executed when each question submitted, it provides a way to do something with the submitted answers; the function will be passed three arguments in an object: <code>options.questionRawData</code> so you can pass any data related to the question with the event using the json file i.e an id, <code>options.selectedAnswers</code>, <code>options.wasCorrectAnswer</code>
+
+Usage example:
+
+    $('#slickQuiz').slickQuiz({
+        events: { 
+            onQuestionSubmission : function (options){
+
+                //Do something with answers
+                console.log (options);
+            },
+        }
+
+    });
+
 
 #### Animation Callback Options
 
