@@ -1,0 +1,20 @@
+{
+  "name": "slickquiz",
+  "version": "1.5.20",
+  "description": "A jQuery plugin for creating pretty, dynamic quizzes. http://jewlofthelotus.github.com/SlickQuiz",
+  "main": "./js/slickQuiz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hshafy/SlickQuiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hshafy/SlickQuiz/issues"
+  },
+  "homepage": "https://github.com/hshafy/SlickQuiz#readme",
+  "keywords": ["jquery-plugin", "ecosystem:jquery"]
+}
