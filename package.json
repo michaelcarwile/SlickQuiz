@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hshafy/SlickQuiz.git"
+    "url": "git+https://github.com/michaelcarwile/SlickQuiz.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hshafy/SlickQuiz/issues"
+    "url": "https://github.com/michaelcarwile/SlickQuiz/issues"
   },
-  "homepage": "https://github.com/hshafy/SlickQuiz#readme",
+  "homepage": "https://github.com/michaelcarwile/SlickQuiz#readme",
   "keywords": ["jquery-plugin", "ecosystem:jquery"]
 }
